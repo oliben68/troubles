@@ -1,0 +1,61 @@
+spring:
+  profiles: alpha-dev
+  data:
+    neo4j:
+      username: neo4j
+      password: H@plageiss680612
+
+library:
+  name: troubles
+  version: 0.0.1
+
+api:
+  version: 0-alpha
+  name: troubles
+  license: Apache License Version 2.0
+  licenseUrl: "\"https://www.apache.org/licenses/LICENSE-2.0\""
+  contact:
+    name: Olivier Steck
+    url: https://wwww.osteck.com
+    email: osteck@gmail.com
+  formatting:
+    basePath: /api/v%s
+
+server:
+  port: 8979
+
+swagger:
+  basePath: documentation
+  basePackage: com.osteck.troubles.controllers
+
+---
+
+spring:
+  profiles: beta-dev
+  data:
+    neo4j:
+      username: neo4j
+      password: H@plageiss680612
+
+library:
+  name: troubles
+  version: 0.0.1
+
+api:
+  version: 0-beta
+  name: troubles
+  license: Apache License Version 2.0
+  licenseUrl: "\"https://www.apache.org/licenses/LICENSE-2.0\""
+  contact:
+    name: Olivier Steck
+    url: https://wwww.osteck.com
+    email: osteck@gmail.com
+  formatting:
+    basePath: /api/v%s
+
+server:
+  port: 8978
+
+swagger:
+  basePath: documentation
+  basePackage: com.osteck.troubles.controllers
